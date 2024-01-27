@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Logo from '../assets/bat.png'
+// import Logo from '../assets/bat.png'
 import {FaBars, FaTimes, FaLinkedin, FaGithub} from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
@@ -11,8 +11,8 @@ const Navbar = () => {
   return (
     <div className='fixed w-full h-[70px] bg-gray-900 flex justify-between items-center px-4 text-gray-300'>
         <div className='flex items items-center cursor-pointer'>
-            <img className='w-[40px]' src={Logo} alt="" />
-            <h1 className='text-blue-400 font-bold uppercase px-4 text-2xl'>Batman</h1>
+            {/* <img className='w-[40px]' src={Logo} alt="" /> */}
+            <h1 className='text-blue-400 font-bold uppercase px-4 text-3xl hover:scale-105 hover:text-blue-300'>AJ</h1>
         </div>
 
         {/* normal screen */}
