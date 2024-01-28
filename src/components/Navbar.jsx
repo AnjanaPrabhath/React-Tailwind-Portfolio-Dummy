@@ -12,7 +12,7 @@ const Navbar = () => {
     <div className='fixed w-full h-[70px] bg-gray-900 flex justify-between items-center px-4 text-gray-300'>
         <div className='flex items items-center cursor-pointer'>
             {/* <img className='w-[40px]' src={Logo} alt="" /> */}
-            <h1 className='text-blue-400 font-bold uppercase px-4 text-3xl hover:scale-105 hover:text-blue-300'>AJ</h1>
+            <h1 className='text-blue-400 font-bold uppercase px-4 text-3xl hover:scale-110 hover:text-blue-300 duration-500'>AJ</h1>
         </div>
 
         {/* normal screen */}
@@ -23,7 +23,7 @@ const Navbar = () => {
                     <li>profile</li>
                     <li>about</li>
                     <li>skills</li>
-                    <li>work</li>
+                    <li>projects</li>
                     <li>contact</li>
                 </ul>
             </div>            
