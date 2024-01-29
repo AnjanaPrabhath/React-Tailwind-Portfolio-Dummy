@@ -10,7 +10,7 @@ const Projects = () => {
 
             {/* header */}
             <div className='pb-4'>
-                <p className='text-4xl font-bold inline border-b-4 border-b-blue-400'>work</p>
+                <p className='text-4xl font-bold inline border-b-4 border-b-blue-400 hover:text-blue-400'>Projects</p>
                 <p className='text-2xl py-4'>here are some of my top projects</p>
             </div>
 
