@@ -3,6 +3,7 @@ import React, {useState} from 'react'
 import {FaBars, FaTimes, FaLinkedin, FaGithub} from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -19,29 +20,39 @@ const Navbar = () => {
 
         <div>
             <div>
-                <ul className='md:flex hidden'>
-                    <li>profile</li>
-                    <li>about</li>
-                    <li>skills</li>
-                    <li>projects</li>
-                    <li>contact</li>
+                <ul className='md:flex hidden uppercase'>
+                    <li className='hover:text-blue-400 duration-300'>
+                        <Link to="home" smooth={true} duration={500}>Home</Link>
+                    </li>
+                    <li className='hover:text-blue-400 duration-300'>
+                        <Link to="about" smooth={true} duration={500}>About</Link>
+                    </li>
+                    <li className='hover:text-blue-400 duration-300'>
+                        <Link to="skills" smooth={true} duration={500}>Skills</Link>
+                    </li>
+                    <li className='hover:text-blue-400 duration-300'>
+                        <Link to="projects" smooth={true} duration={500}>Projects</Link>
+                    </li>
+                    <li className='hover:text-blue-400 duration-300'>
+                        <Link to="contact" smooth={true} duration={500}>Contact</Link>
+                    </li>
                 </ul>
             </div>            
         </div>
 
         {/* medium size screen */}
         <div onClick={handleClick} className='md:hidden z-10'>
-            {!nav ? <FaBars/> : <FaTimes/>}
+            {!nav ? <FaBars/> : <FaTimes size={20} />}
         </div>
 
         {/* small screen */}
         
-            <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-gray-900 flex flex-col justify-center items-center'}>
-                <li className='py-6 text-3xl'>profile</li>
-                <li className='py-6 text-3xl'>about</li>
-                <li className='py-6 text-3xl'>skills</li>
-                <li className='py-6 text-3xl'>work</li>
-                <li className='py-6 text-3xl'>contact</li>
+            <ul className={!nav ? 'hidden' : ' pt-10 border absolute top-0 right-0 w-full h-[300px] bg-gray-900 flex flex-col justify-center items-center'}>
+                <li className='py-2 text-xl'><Link onClick={handleClick} to="home" smooth={true} duration={500}>Home</Link></li>
+                <li className='py-2 text-xl'><Link onClick={handleClick} to="about" smooth={true} duration={500}>About</Link></li>
+                <li className='py-2 text-xl'><Link onClick={handleClick} to="skills" smooth={true} duration={500}>Skills</Link></li>
+                <li className='py-2 text-xl'><Link onClick={handleClick} to="projects" smooth={true} duration={500}>Projects</Link></li>
+                <li className='py-2 text-xl'><Link onClick={handleClick} to="contact" smooth={true} duration={500}>Contact</Link></li>
             </ul>
         
         {/* social links */}

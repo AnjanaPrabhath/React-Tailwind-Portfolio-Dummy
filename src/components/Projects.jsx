@@ -2,6 +2,7 @@ import React from 'react'
 import RealEstate from '../assets/projects/realestate.jpg'
 import WorkImg from '../assets/projects/workImg.jpeg'
 import threeIdiots from '../assets/projects/3idiots.png'
+import LoginImg from '../assets/projects/loginImg.jpg'
 
 const Projects = () => {
   return (
@@ -81,7 +82,7 @@ const Projects = () => {
                 </div>
 
                 {/* project 4*/}
-                <div style={{backgroundImage: `url(${threeIdiots})`}}
+                <div style={{backgroundImage: `url(${LoginImg})`}}
                 className='shadow-lg shadow-gray-950 group container rounded-md flex justify-center items-center mx-auto hover:scale-105 duration-300 content-div'>
                     <div className='opacity-0 group-hover:opacity-100 '>
 
